@@ -1,0 +1,251 @@
+.pagination a.page_link {
+    margin: 0 7px;
+}
+
+.pagination a.page_link:hover {
+    color: #0AD188 !important;
+    border-color: #0AD188;
+}
+
+a.page_link.page-link {
+    height: 46px;
+    width: 46px;
+    border-radius: 100% !important;
+    font-size: 18px;
+    color: #111419;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #E9E9E9;
+    transition: all 0.5s ease 0s;
+}
+
+.active_page {
+    color: #0AD188 !important;
+    border-color: #0AD188 !important;
+}
+
+
+.prices_filter .price-input {
+    width: 100%;
+    display: flex;
+    margin: 0 0 10px;
+}
+
+.prices_filter .price-input .field {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.prices_filter .field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 19px;
+    margin: 0px;
+    border-radius: 5px;
+    text-align: left;
+    border: 0px solid #999;
+    -moz-appearance: textfield;
+}
+
+.prices_filter .field.max-field input {
+    text-align: right;
+}
+
+.prices_filter input[type="number"]::-webkit-outer-spin-button,
+.prices_filter input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.prices_filter .price-input .separator {
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices_filter .slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.prices_filter .slider .progress {
+    height: 100%;
+    left:0%;
+    right:0%;
+    position: absolute;
+    border-radius: 5px;
+    background: #0AD188;
+}
+
+.prices_filter .range-input {
+    position: relative;
+}
+
+.prices_filter .range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.prices_filter input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #0AD188;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.prices_filter input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #0AD188;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.rating_lists li:not(:last-child) {
+    margin-bottom: 12px
+}
+
+.rating_lists .ratings {
+    display: flex;
+    align-items: center
+}
+
+.rating_lists .ratings i {
+    font-size: 16px;
+    color: #ffc107;
+    margin-right: 4px
+}
+
+.rating_lists .ratings i.unrated {
+    color: #f1f1f1
+}
+
+.rating_lists .ratings span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #687083;
+    display: inline-block;
+    margin-left: 11px
+}
+
+.filter-by-rating-one {
+    margin-left: 46%;
+}
+
+.primary_checkbox {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    align-items: center;
+}
+
+.primary_checkbox input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.rating_lists .ratings span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #111419;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.primary_checkbox input:checked~.checkmark {
+    background: var(--base_color);
+    transition: .3s;
+}
+
+.primary_checkbox .checkmark {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    line-height: 18px;
+    flex: 18px 0 0;
+    border-radius: 3px;
+}
+
+.primary_checkbox .checkmark:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #444444;
+    transition: .3s;
+    transform: scale(1);
+}
+
+.primary_checkbox input:checked~.checkmark:after {
+    border: 1px solid #0AD188;
+}
+
+.primary_checkbox input:checked~.checkmark:before {
+    content: "\e9a4";
+    font-family: boxicons;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    text-indent: 1px;
+    color: #828bb2;
+    background-color: transparent;
+    border: 0;
+    transform: rotate(8deg);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    z-index: 99;
+    color: #fff;
+    transition: .3s;
+}
+
+.primary_checkbox input:checked~.checkmark {
+    background: #0AD188;
+    transition: .3s;
+}
+
+.filter-by-ratings {
+    margin-right: 17px;
+}
+
+input.form-check-input.cateFilter.rating_star {
+    margin-right: 10px;
+}

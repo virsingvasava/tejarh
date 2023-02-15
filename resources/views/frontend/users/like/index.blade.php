@@ -1,0 +1,126 @@
+@extends('frontend.users.layouts.master')
+
+@section('title')
+    {{ 'Tejarh - User Likelist' }}
+@endsection
+
+@section('content')
+
+    <div class="wishlist-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{ route('frontend.users.site.index') }}"><i
+                                        class="fas fa-home"></i> @lang('business_messages.menu.home')</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang('frontend-messages.header.Likelist')</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-md-12">
+                    <div class="likelist_deleted_message"></div>
+                    <div class="wishlist-table">
+                        <table>
+                            <tr>
+                                <!-- <th width="60px">
+                                    <div class="form-check">
+                                        <input class="form-check-input parent" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </th> -->
+                                <th>@lang('frontend-messages.likelist.products')</th>
+                                <th>@lang('frontend-messages.likelist.price')</th>
+                                <th>@lang('frontend-messages.likelist.stock_status')</th>
+                                <th width="220px">@lang('frontend-messages.likelist.action')</th>
+                                <th width="120px"> @lang('frontend-messages.likelist.remove')</th>
+                            </tr>
+                            @if (!empty($itemArray) && count($itemArray) > 0)
+                                @foreach ($itemArray as $key => $value)
+                                    <tr>
+                                        <!-- <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input child" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td> -->
+                                        <td>
+                                            <div class="wishlist-item">
+                                                @if ($value['item_pictures']['item_picture1'] != "" && file_exists(public_path('assets/post/'.$value['item_pictures']['item_picture1']))))
+                                                <img src="{{ asset(USERS_ITEMS_POST_FOLDER . '/' . $value['item_pictures']['item_picture1']) }}">
+                                                @else
+                                                    <img src="{{ asset('fronted/users_flow/assets/images/no-image.png') }}">
+                                                @endif
+                                                <div class="wishlist-item-content">
+                                                    <h5>{{ $value['items']['what_are_you_selling'] }}</h5>
+                                                    <div class="product-rating">
+                                                        <img src="{{ asset('assets/images/fill-star.png') }}">
+                                                        <img src="{{ asset('assets/images/fill-star.png') }}">
+                                                        <img src="{{ asset('assets/images/grey-star.png') }}">
+                                                        <img src="{{ asset('assets/images/grey-star.png') }}">
+                                                        <img src="{{ asset('assets/images/grey-star.png') }}">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            {{ $value['items']['price'] }} {{env('CURRENCY_TAG')}}
+                                        </td>
+                                        <td>
+                                            <p class="stock">In Stock</p>
+                                        </td>
+                                        <td>
+                                            <a href="javascript::void(0)" class="btn">@lang('frontend-messages.likelist.buy_now')</a>
+                                        </td>
+                                        <td>
+                                            <a class="likelist_delete" href="javascript:void(0)"
+                                                data-id="{{ $value['id'] }}"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="6">
+                                        <div>
+                                            <p>@lang('frontend-messages.likelist.your_wishlist_is_empty')</p>
+                                            <a href="{{ route('frontend.users.site.index') }}">@lang('frontend-messages.likelist.shopping')</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endif
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="try-tejarg-app-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="{{ asset(USERS_ASSETS_FOLDER . '/images/try-tejarg-app.png ') }}">
+                </div>
+                <div class="col-md-7">
+                    <div class="mo-application">
+                        <h2>@lang('frontend-messages.header.try_the_tejrah_app')</h2>
+                        <p>@lang('frontend-messages.header.try_the_tejrah_app_sub_text')</p>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://www.google.com/">
+                                    <img src="{{ asset(USERS_ASSETS_FOLDER . '/images/google-play.png ') }}">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.google.com/">
+                                    <img src="{{ asset(USERS_ASSETS_FOLDER . '/images/app-store.png') }}">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endsection

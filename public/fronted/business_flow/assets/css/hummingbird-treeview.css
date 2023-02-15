@@ -1,0 +1,71 @@
+.hummingbird-treeview,
+.hummingbird-treeview *
+{
+    list-style: none;
+    font-size: 20px;
+    line-height: 24px;
+}
+.hummingbird-treeview{margin:0 0 15px;text-align: right;}
+
+.hummingbird-treeview label {
+    font-weight: normal;
+    color: #545454;
+    font-size: 16px;line-height: 16px;
+}
+
+
+.hummingbird-treeview input[type=checkbox] {
+    width : 16px;
+    height :16px;
+    padding: 0px;
+    margin: 0 6px 0 0;
+   
+}
+.hummingbird-treeview input[type="checkbox"] {
+    border:1px solid #444444!important;
+    border-radius: 3px!important;
+            accent-color: #0AD188;
+            color:#fff;
+}
+
+.hummingbird-treeview ul:not(.hummingbird-base) {
+    display: none;
+}
+
+.hummingbird-treeview .fa {
+    font-style: normal;
+    cursor: pointer;
+    color: #0AD188;
+    font-size: 15px; line-height: 15px;margin: 0 10px 0 0;
+}
+
+.hummingbird-treeview .fas {
+    font-style: normal;
+    cursor: pointer;
+}
+
+.hummingbird-base {
+    white-space:nowrap;
+    padding:0;
+    margin: 0;
+    text-align: left;
+}
+
+.hummingbird-base label input{margin:0 10px 0 0;}
+.hummingbird-base li ul {padding:0; margin:0 0 0 23px;}
+.hummingbird-base.show-more-height{
+    /* height:auto; */
+    height: 245px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cate-read-more{
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    text-decoration: underline;
+    font-size: 17px;
+    line-height: 19px;
+    color:#0AD188;
+}

@@ -1,0 +1,79 @@
+/* Blog page Css start */
+
+.blog-main-sec {
+  padding: 60px 0;
+}
+
+.blog-main-sec .inner-blog-sec h2 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 28px;
+  line-height: 35px;
+  color: #101828;
+  margin-bottom: 30px;
+}
+
+.blog-main-sec .inner-blog-sec h3 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #101828;
+  margin-bottom: 15px;
+}
+
+.blog-main-sec .inner-blog-sec p {
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #475467;
+  margin-bottom: 20px;
+}
+
+.btn-read-more {
+  background-color: #0AD188;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn-read-more:hover {
+  color: #fff;
+}
+
+.blog-detail-sec {
+  padding: 60px 0 0;
+}
+
+.blog-detail-sec h1 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 32px;
+  line-height: 40px;
+  color: #101828;
+  margin-bottom: 30px;
+}
+
+.blog-detail-sec .entry-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.blog-detail-sec .entry-content p {
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #475467;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Blog page Css end */

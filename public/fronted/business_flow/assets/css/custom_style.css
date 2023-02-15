@@ -1,0 +1,54 @@
+
+.or_profile_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.login.logout #logout img {
+    border-radius: 100%;
+    object-fit: cover;
+}
+.nice-select.form-select.country_drop_down.open ul.list, .nice-select.form-select.category-h ul.list{
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.products-box-footer img {
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.category-sub-menu-wrapper a span{
+    width: 100px;
+    display: block;
+    padding: 35px 0 0 0;}
+
+.my-orders-wrapper .my-orders-products-box .product-box img {
+    width: 146px;
+    height: 104px;
+    object-fit: fill;
+}
+
+.verified-your-account .fas.fa-phone{transform: rotatey(180deg);}
+.hero-image-slide{height: 553px;}
+.hero-image-slide img{height: 100%;}
+
+i.fas.fa-trash-alt {
+    color: red;
+}
+i.fas.fa-edit {
+    color: #22b33f;
+}
+i.fas.fa-eye {
+    color: #35cd9d;
+    margin-left: -1px;
+}
+a.btn.btn-primary.btn-sm-edit {
+    padding: 0px 10px !important;
+}
+a.btn.btn-primary.btn-sm-delete.post_delete_business {
+    padding: 0px 10px !important;
+
+}

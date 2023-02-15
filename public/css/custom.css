@@ -1,0 +1,35 @@
+
+.error{
+  color: #D8000C;
+  font-size: initial;
+  text-transform: initial;
+  font-size: 15px;
+}
+
+label.image_upload_btn {
+    display: block;
+    width: 100%;
+    height: calc(1.4em + 0.94rem + 3.7px);
+    padding: 0.47rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #475F7B;
+    background-color: #DDD;
+    background-clip: padding-box;
+    border: 1px solid #DFE3E7;
+    border-radius: 0.267rem;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+select.custom-select.error 
+{
+    color: #495057 !important;
+}
+
+.product-gallary img{margin:0 10px 10px 0;}
+.bdetail li{display: inline-block; vertical-align: top; width:49%;margin: 0 0 15px;}
+.bdetail li .bd-detail-n{display: block;margin: 0 0 0 27px;font-weight: bold;}
+.user-profile-images img.ptimg{height:295px;width: 100%;}

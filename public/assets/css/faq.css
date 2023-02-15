@@ -1,0 +1,77 @@
+
+.ja-list.workingpaper {
+    padding: 60px 0;
+  }
+  
+  .ja-list.workingpaper .faq-sec p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #E08A76;
+    margin-bottom: 15px;
+  }
+  
+  .ja-list.workingpaper .faq-sec h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 35px;
+    color: #101828;
+    margin-bottom: 15px;
+  }
+  
+  .ja-list.workingpaper .faq-sec p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #475467;
+    margin-bottom: 20px;
+  }
+  
+  .ja-list.workingpaper .faq-sec p a {
+    font-family: 'Karla';
+    color: #00818D;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background: #0AD188;
+    color: #fff !important;
+    box-shadow: none;
+  }
+  
+  .accordion-button:not(.collapsed):hover {
+    color: #fff;
+  }
+  
+  .accordion-button {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101828;
+    padding: 20px 32px;
+    border: 1px solid #E5E7EB;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .accordion-button:hover, .accordion-button:focus {
+    border: 1px solid #E5E7EB;
+    color: #101828;
+    text-decoration: none;
+  }
+  
+  .card-body {
+    padding: 20px 32px;
+    border: 1px solid #E5E7EB;
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #475467;
+  }
+  
